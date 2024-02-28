@@ -9,7 +9,7 @@ public class LuxeParkingSpot extends ParkingSpot{
 
     private String guard;
 
-    public LuxeParkingSpot(int id, LocalDateTime createdAt, LocalDateTime updatedAt, String createdBy, String updatedBy, String spotNumber, VehicleType vehicleType, SpotStatus spotStatus, Vehicle vehicle, String guard) {
+    public LuxeParkingSpot(int id, LocalDateTime createdAt, LocalDateTime updatedAt, String createdBy, String updatedBy, int spotNumber, VehicleType vehicleType, SpotStatus spotStatus, Vehicle vehicle, String guard) {
         super(id, createdAt, updatedAt, createdBy, updatedBy, spotNumber, vehicleType, spotStatus, vehicle);
         this.guard = guard;
     }
