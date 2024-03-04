@@ -27,6 +27,6 @@ public class ParkingFloorRepository {
     public void put(ParkingFloor parkingFloor)
     {
         parkingFloorMap.put(parkingFloor.getId(), parkingFloor);
-        System.out.println("ParkingFloor has been added successfully");
+        System.out.println("ParkingFloor has been added successfully" + parkingFloor.getId());
     }
 }

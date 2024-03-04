@@ -26,6 +26,6 @@ public class GateRepository {
     public void put(Gate gate)
     {
         gateMap.put(gate.getId(), gate);
-        System.out.println("Gate has been added successfully");
+        System.out.println("Gate has been added successfully" + gate.getId());
     }
 }

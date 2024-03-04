@@ -78,6 +78,7 @@ public class InitialisationService {
         }
         parkingLot.setFloors(floors);
         parkingLotRepository.put(parkingLot);
+        System.out.println("****Initialisation Ended****");
         return parkingLotRepository.get(1);
     }
 }

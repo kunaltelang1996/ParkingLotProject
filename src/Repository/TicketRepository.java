@@ -28,7 +28,7 @@ public class TicketRepository {
     {
         ticket.setId(++idCounter);
         ticketMap.put(ticket.getId(), ticket);
-        System.out.println("Ticket has been added successfully");
+        System.out.println("Ticket has been added successfully" + ticket.getId());
         return ticket;
     }
 }
