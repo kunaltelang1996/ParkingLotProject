@@ -6,12 +6,12 @@ import java.time.LocalDateTime;
 
 public class Bill extends BaseModel{
     private LocalDateTime exitTime;
-    private int amount;
+    private double amount;
     private Ticket ticket;
     private Gate exitGate;
     private BillStatus billStatus;
 
-    public Bill(int id, LocalDateTime createdAt, LocalDateTime updatedAt, String createdBy, String updatedBy, LocalDateTime exitTime, int amount, Ticket ticket, Gate exitGate, BillStatus billStatus) {
+    public Bill(int id, LocalDateTime createdAt, LocalDateTime updatedAt, String createdBy, String updatedBy, LocalDateTime exitTime, double amount, Ticket ticket, Gate exitGate, BillStatus billStatus) {
         super(id, createdAt, updatedAt, createdBy, updatedBy);
         this.exitTime = exitTime;
         this.amount = amount;
@@ -40,11 +40,11 @@ public class Bill extends BaseModel{
         this.exitTime = exitTime;
     }
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
